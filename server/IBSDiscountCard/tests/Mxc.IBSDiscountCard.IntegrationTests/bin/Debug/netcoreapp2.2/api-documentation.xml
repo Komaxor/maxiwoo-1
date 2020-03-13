@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mxc.IBSDiscountCard.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Mxc.IBSDiscountCard.WebApi.Controllers.ApiControllerBase">
+            <summary>
+            Base class for every controller
+            </summary>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.ImageController.UploadPlaceImageAsync(Mxc.IBSDiscountCard.Application.Image.Requests.UploadPlaceImageRequest)">
+            <summary>
+            Upload image for place
+            </summary>
+            <param name="request">Image content</param>
+            <returns>Image id</returns>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.ImageController.UploadUserImageAsync(Mxc.IBSDiscountCard.Application.Image.Requests.UpdateMyProfileImageRequest)">
+            <summary>
+            Upload image for user
+            </summary>
+            <param name="request">Image content</param>
+            <returns>Image id</returns>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.ImageController.GetAsync(System.String)">
+             <summary>
+             Get image by id
+             </summary>
+             <param name="imageName">Image id</param>
+             <returns>Image</returns>
+            
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.PlaceController.GetPlacesAsync(Mxc.Domain.Abstractions.Repositories.PagingOptions,System.String)">
+            <summary>
+            Get place list
+            </summary>
+            <param name="pagingOptions">Options for pagination</param>
+            <param name="searchText">Optional search parameter</param>
+            <returns>Place header list</returns>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.PlaceController.GetPlaceAsync(System.Guid)">
+            <summary>
+            Get place by id
+            </summary>
+            <param name="placeId">Place id</param>
+            <returns>Place details</returns>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.PlaceController.PostPlaceAsync(Mxc.IBSDiscountCard.Application.Place.Commands.AddPlace)">
+            <summary>
+            Create new place
+            </summary>
+            <param name="command">Place data</param>
+            <returns>Place Id</returns>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.PrivaciesController.TermsOfUse">
+            <summary>
+            Get terms of use
+            </summary>
+            <returns>Terms Of Use in HTML format</returns>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.PrivaciesController.PrivacyPolicy">
+            <summary>
+            Get privacy policy
+            </summary>
+            <returns>Privacy policy in html format</returns>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.UserController.GetMyProfileAsync">
+            <summary>
+            Get profile data
+            </summary>
+            <returns>User profile data</returns>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.UserController.RegisterUserAsync(Mxc.IBSDiscountCard.Application.User.Commands.RegisterUser)">
+            <summary>
+            Register new user
+            </summary>
+            <param name="command">User data</param>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.UserController.LoginUserAsync(Mxc.IBSDiscountCard.Application.User.Commands.LoginUser)">
+            <summary>
+            Login with username, password
+            </summary>
+            <param name="command">Login data</param>
+            <returns>JWT token for authorized calls</returns>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.UserController.SendActivationCodeAsync(Mxc.IBSDiscountCard.Application.User.Commands.SendActivationCode)">
+            <summary>
+            Resend activation code for user
+            </summary>
+            <param name="command">Empty object</param>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.UserController.ActivateUserAsync(Mxc.IBSDiscountCard.Application.User.Commands.ActivateUser)">
+            <summary>
+            Activate user with code
+            </summary>
+            <param name="command">Activation code</param>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.UserController.ChangeMyPasswordAsync(Mxc.IBSDiscountCard.Application.User.Commands.ChangeMyPassword)">
+            <summary>
+            Change user password
+            </summary>
+            <param name="command">Password data</param>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.UserController.SendPasswordResetCodeAsync(Mxc.IBSDiscountCard.Application.User.Commands.SendPasswordResetCode)">
+            <summary>
+            Send password reset code
+            </summary>
+            <param name="command">Login email</param>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.UserController.SetNewPasswordAsync(Mxc.IBSDiscountCard.Application.User.Commands.SetNewPassword)">
+            <summary>
+            Set new password
+            </summary>
+            <param name="command">Code and new password</param>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.UserController.GeneratePaymentOptionsAsync">
+            <summary>
+            Generate available payment options for the user
+            </summary>
+            <returns>Payment options</returns>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.UserController.SubscribeAsync(Mxc.IBSDiscountCard.Application.User.Commands.Subscribe)">
+            <summary>
+            Create a subscription for the user
+            </summary>
+            <param name="command">Payment provider specific data</param>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.UserController.UnsubscribeAsync(Mxc.IBSDiscountCard.Application.User.Commands.Unsubscribe)">
+            <summary>
+            Unsubscribe
+            </summary>
+            <param name="command">Email and password of the logged in user</param>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.Controllers.WebhooksController.AcceptAsync">
+            <summary>
+            Webhook callback endpoint for payment provider
+            </summary>
+        </member>
+        <member name="T:Mxc.IBSDiscountCard.WebApi.WebAutofacModule">
+            <summary>
+            Autofac config for the WebApi project
+            </summary>
+        </member>
+        <member name="M:Mxc.IBSDiscountCard.WebApi.WebAutofacModule.Load(Autofac.ContainerBuilder)">
+            <summary>
+            Override to add registrations to the container.
+            </summary>
+            <remarks>
+            Note that the ContainerBuilder parameter is unique to this module.
+            </remarks>
+            <param name="builder">The builder through which components can be
+            registered.</param>
+        </member>
+    </members>
+</doc>

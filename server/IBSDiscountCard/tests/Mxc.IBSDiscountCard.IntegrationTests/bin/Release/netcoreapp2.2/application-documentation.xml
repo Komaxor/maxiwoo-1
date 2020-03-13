@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mxc.IBSDiscountCard.Application</name>
+    </assembly>
+    <members>
+        <member name="T:Mxc.IBSDiscountCard.Application.Common.Commands.IBSDiscountCardCommandHandler`2">
+            <summary>
+            IBSDiscountCard Command Handle
+            </summary>
+            <typeparam name="TCommand"></typeparam>
+            <typeparam name="TResult"></typeparam>
+        </member>
+        <member name="T:Mxc.IBSDiscountCard.Application.Common.Commands.IIBSDiscountCardCommand`1">
+            <summary>
+            IBSDiscountCard command interface
+            </summary>
+            <typeparam name="TCommand"></typeparam>
+        </member>
+    </members>
+</doc>

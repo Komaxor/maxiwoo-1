@@ -1,0 +1,306 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Application/Mxc.IBSDiscountCard.Application.csproj": {}
+  },
+  "projects": {
+    "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Application/Mxc.IBSDiscountCard.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Application/Mxc.IBSDiscountCard.Application.csproj",
+        "projectName": "Mxc.IBSDiscountCard.Application",
+        "projectPath": "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Application/Mxc.IBSDiscountCard.Application.csproj",
+        "packagesPath": "/Users/antex/.nuget/packages/",
+        "outputPath": "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Application/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/NuGet.Config",
+          "/Users/antex/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.commands.abstractions": {},
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.domain.abstractions": {},
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.helpers": {},
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.ruleset": {},
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.test.abstractions": {},
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.webapi.abstractions": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/Mxc.IBSDiscountCard.Common.csproj": {
+                "projectPath": "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/Mxc.IBSDiscountCard.Common.csproj"
+              },
+              "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Domain/Mxc.IBSDiscountCard.Domain.csproj": {
+                "projectPath": "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Domain/Mxc.IBSDiscountCard.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[4.9.2, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "MediatR.Extensions.Autofac.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Mxc.Commands.Abstractions": {
+              "target": "Package",
+              "version": "[0.1.3, )"
+            },
+            "Mxc.Domain.Abstractions": {
+              "target": "Package",
+              "version": "[0.3.4, )"
+            },
+            "Mxc.Helpers": {
+              "target": "Package",
+              "version": "[0.2.4, )"
+            },
+            "Mxc.Ruleset": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
+            "Roslynator.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/Mxc.IBSDiscountCard.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/Mxc.IBSDiscountCard.Common.csproj",
+        "projectName": "Mxc.IBSDiscountCard.Common",
+        "projectPath": "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/Mxc.IBSDiscountCard.Common.csproj",
+        "packagesPath": "/Users/antex/.nuget/packages/",
+        "outputPath": "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/NuGet.Config",
+          "/Users/antex/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.commands.abstractions": {},
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.domain.abstractions": {},
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.helpers": {},
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.ruleset": {},
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.test.abstractions": {},
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.webapi.abstractions": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[4.9.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Mxc.Commands.Abstractions": {
+              "target": "Package",
+              "version": "[0.1.3, )"
+            },
+            "Mxc.Domain.Abstractions": {
+              "target": "Package",
+              "version": "[0.3.4, )"
+            },
+            "Mxc.Helpers": {
+              "target": "Package",
+              "version": "[0.2.4, )"
+            },
+            "Mxc.Ruleset": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
+            "Roslynator.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Domain/Mxc.IBSDiscountCard.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Domain/Mxc.IBSDiscountCard.Domain.csproj",
+        "projectName": "Mxc.IBSDiscountCard.Domain",
+        "projectPath": "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Domain/Mxc.IBSDiscountCard.Domain.csproj",
+        "packagesPath": "/Users/antex/.nuget/packages/",
+        "outputPath": "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/NuGet.Config",
+          "/Users/antex/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.commands.abstractions": {},
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.domain.abstractions": {},
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.helpers": {},
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.ruleset": {},
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.test.abstractions": {},
+          "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/mcx_nugets/mxc.webapi.abstractions": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/Mxc.IBSDiscountCard.Common.csproj": {
+                "projectPath": "/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/Mxc.IBSDiscountCard.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Mxc.Domain.Abstractions": {
+              "target": "Package",
+              "version": "[0.3.4, )"
+            },
+            "Mxc.Ruleset": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
+            "Roslynator.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

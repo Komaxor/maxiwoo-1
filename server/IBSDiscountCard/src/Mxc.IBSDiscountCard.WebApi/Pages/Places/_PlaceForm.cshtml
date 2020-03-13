@@ -1,0 +1,104 @@
+@using Mxc.IBSDiscountCard.Application.Place.Queries
+@model Mxc.IBSDiscountCard.Application.Place.Queries.AdminPlaceViewModel
+
+    <form method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            <label asp-for="Id" class="form-text text-left"></label>
+            <input asp-for="Id" class="form-control" readonly="readonly" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Name" class="form-text text-left"></label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="IsHidden" class="form-text text-left"></label>
+            <input asp-for="IsHidden" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="CategoryId" class="form-text text-left">Category</label>
+            <select asp-for="CategoryId"
+                    asp-items="Html.GetEnumSelectList<Category>()">
+            </select>
+        </div>
+        <div class="form-group">
+            <label asp-for="Type" class="form-text text-left"></label>
+            <input asp-for="Type" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Tags" class="form-text text-left">Tags (format: tag1, tag2, tag3)</label>
+            <input asp-for="Tags" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="About" class="form-text text-left"></label>
+            <textarea asp-for="About" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label asp-for="Address.DisplayAddress" class="form-text text-left">Address</label>
+            <input asp-for="Address.DisplayAddress" class="form-control" />
+            <label asp-for="Address.Latitude" class="form-text text-left"></label>
+            <input asp-for="Address.Latitude" class="form-control" />
+            <label asp-for="Address.Longitude" class="form-text text-left"></label>
+            <input asp-for="Address.Longitude" class="form-control" />
+        </div>
+        <label class="form-text text-left">Opening hours</label>
+        <div class="form-row">
+            <label class="form-control col-2 m-1" asp-for="OpeningHours.Monday"></label>
+            <input class="form-control col-9 m-1" asp-for="OpeningHours.Monday">
+        </div>
+        <div class="form-row">
+            <label class="form-control col-2 m-1" asp-for="OpeningHours.Tuesday"></label>
+            <input class="form-control col-9 m-1" asp-for="OpeningHours.Tuesday">
+        </div>
+        <div class="form-row">
+            <label class="form-control col-2 m-1" asp-for="OpeningHours.Wednesday"></label>
+            <input class="form-control col-9 m-1" asp-for="OpeningHours.Wednesday">
+        </div>
+        <div class="form-row">
+            <label class="form-control col-2 m-1" asp-for="OpeningHours.Thursday"></label>
+            <input class="form-control col-9 m-1" asp-for="OpeningHours.Thursday">
+        </div>
+        <div class="form-row">
+            <label class="form-control col-2 m-1" asp-for="OpeningHours.Friday"></label>
+            <input class="form-control col-9 m-1" asp-for="OpeningHours.Friday">
+        </div>
+        <div class="form-row">
+            <label class="form-control col-2 m-1" asp-for="OpeningHours.Saturday"></label>
+            <input class="form-control col-9 m-1" asp-for="OpeningHours.Saturday">
+        </div>
+        <div class="form-row">
+            <label class="form-control col-2 m-1" asp-for="OpeningHours.Sunday"></label>
+            <input class="form-control col-9 m-1" asp-for="OpeningHours.Sunday">
+        </div>
+        <div class="form-group">
+            <label asp-for="PreviewImage" class="form-text text-left">Preview Image</label>
+            <input asp-for="PreviewImage" type="file" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="PhoneNumber" class="form-text text-left"></label>
+            <input asp-for="PhoneNumber" class="form-control" />
+            <asp:RegularExpressionValidator ID="MyRegularExpressionValidator" runat="server"
+                                            ErrorMessage="Invalid Number" ControlToValidate="phonebox" ValidationExpression="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}-\d{3}"></asp:RegularExpressionValidator>
+        </div>
+        <div class="form-group">
+            <label asp-for="Email" class="form-text text-left"></label>
+            <input asp-for="Email" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Web" class="form-text text-left"></label>
+            <input asp-for="Web" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Facebook" class="form-text text-left"></label>
+            <input asp-for="Facebook" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Instagram" class="form-text text-left"></label>
+            <input asp-for="Instagram" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-success">Save</button>
+    </form>

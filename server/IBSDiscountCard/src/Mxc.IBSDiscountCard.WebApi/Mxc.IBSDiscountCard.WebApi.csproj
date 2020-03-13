@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+        <IsPackable>false</IsPackable>
+        <LangVersion>7.3</LangVersion>
+        <DocumentationFile>api-documentation.xml</DocumentationFile>
+        <NoWarn>1701;1702;1591</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+	<PackageReference Include="Microsoft.AspNetCore.App">
+	  <PrivateAssets Condition="'%(PackageReference.Version)' == ''">all</PrivateAssets>
+	  <Publish Condition="'%(PackageReference.Version)' == ''">true</Publish>
+	</PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.6" />
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+        <PackageReference Include="App.Metrics.AspNetCore.Endpoints" Version="3.1.0" />
+        <PackageReference Include="App.Metrics.AspNetCore.Mvc" Version="3.1.0" />
+        <PackageReference Include="App.Metrics.Formatters.Prometheus" Version="3.1.0" />
+        <PackageReference Include="Autofac" Version="4.9.2" />
+        <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
+        <PackageReference Include="AutoMapper" Version="8.1.1" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.1" />
+        <PackageReference Include="FluentValidation.AspNetCore" Version="8.4.0" />
+        <PackageReference Include="MediatR" Version="7.0.0" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.4" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+        <PackageReference Include="Roslynator.Analyzers" Version="2.1.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Mxc.Ruleset" Version="1.0.5" />
+        <PackageReference Include="Mxc.Helpers" Version="0.2.4" />
+        <PackageReference Include="Mxc.WebApi.Abstractions" Version="0.1.5" />
+        <PackageReference Include="bootstrap" Version="4.4.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Mxc.IBSDiscountCard.Application\Mxc.IBSDiscountCard.Application.csproj" />
+        <ProjectReference Include="..\Mxc.IBSDiscountCard.Common\Mxc.IBSDiscountCard.Common.csproj" />
+        <ProjectReference Include="..\Mxc.IBSDiscountCard.Infrastructure\Mxc.IBSDiscountCard.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="api-documentation.xml">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Pages\Home.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Identity\Pages\_ViewStart.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Places\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Places\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Places\_PlaceForm.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Components\Image\Default.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Update="appsettings.Production.json">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+        <Content Update="web.config">
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+    </ItemGroup>
+</Project>

@@ -1,0 +1,26 @@
+{
+  "defaultSeverety": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-standard",
+    "tslint-config-prettier"
+  ],
+  "jsRules": {},
+  "rules": {
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "case-insensitive",
+        "named-imports-order": "case-insensitive"
+      }
+    ],
+    "object-literal-sort-keys": false,
+    "member-ordering": false,
+    "jsx-no-lamda": false,
+    "jsx-boolean-value": false,
+    "no-var-keyword": true,
+    "no-empty-interface": false,
+    "noImplicitAny": false
+  },
+  "rulesDirectory": []
+}

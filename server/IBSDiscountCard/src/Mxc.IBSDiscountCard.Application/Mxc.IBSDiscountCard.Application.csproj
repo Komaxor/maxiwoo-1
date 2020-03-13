@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <DocumentationFile>application-documentation.xml</DocumentationFile>
+        <NoWarn>1701;1702;1591</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Autofac" Version="4.9.2" />
+        <PackageReference Include="AutoMapper" Version="8.1.1" />
+        <PackageReference Include="FluentValidation.AspNetCore" Version="8.4.0" />
+        <PackageReference Include="MediatR" Version="7.0.0" />
+        <PackageReference Include="MediatR.Extensions.Autofac.DependencyInjection" Version="3.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+        <PackageReference Include="MimeKit" Version="2.2.0" />
+        <PackageReference Include="Roslynator.Analyzers" Version="2.1.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+      <PackageReference Include="Mxc.Commands.Abstractions" Version="0.1.3" />
+      <PackageReference Include="Mxc.Domain.Abstractions" Version="0.3.4" />
+      <PackageReference Include="Mxc.Helpers" Version="0.2.4" />
+      <PackageReference Include="Mxc.Ruleset" Version="1.0.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Mxc.IBSDiscountCard.Common\Mxc.IBSDiscountCard.Common.csproj" />
+        <ProjectReference Include="..\Mxc.IBSDiscountCard.Domain\Mxc.IBSDiscountCard.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="application-documentation.xml">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="User\Requests\" />
+      <Folder Include="Category\" />
+      <Folder Include="Category\Queries\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Place\Validators\DiscountValidator.cs" />
+    </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+@page
+@model Mxc.IBSDiscountCard.WebApi.Pages.Places.NewPlace
+
+@{
+    ViewData["Title"] = "Creating a new place";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Creating a new place</h1>
+    <partial name="_PlaceForm" model="@Model.Place" view-data="@ViewData"/>
+    @if (!ModelState.IsValid)
+    {
+        <div class="alert alert-danger" role="alert" asp-validation-summary="All"></div>
+    }
+</div>

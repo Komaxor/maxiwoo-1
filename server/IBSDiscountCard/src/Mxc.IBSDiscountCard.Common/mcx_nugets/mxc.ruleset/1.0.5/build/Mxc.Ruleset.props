@@ -1,0 +1,5 @@
+<Project>
+    <PropertyGroup>
+        <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)Base.ruleset</CodeAnalysisRuleSet>
+    </PropertyGroup>
+</Project>

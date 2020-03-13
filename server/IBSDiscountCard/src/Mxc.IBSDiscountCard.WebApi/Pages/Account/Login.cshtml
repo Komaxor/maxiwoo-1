@@ -1,0 +1,22 @@
+@page
+@model Mxc.IBSDiscountCard.WebApi.Areas.Identity.Pages.LoginModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="row justify-content-center">
+    <form method="post" class="justify-content-center">
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            <label asp-for="Username" class="form-text">Email</label>
+            <input asp-for="Username" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password" class="form-text"></label>
+            @Html.Password("Password", Model.Password, new {@class = "form-control"})
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <div asp-validation-summary="All"></div>
+</div>

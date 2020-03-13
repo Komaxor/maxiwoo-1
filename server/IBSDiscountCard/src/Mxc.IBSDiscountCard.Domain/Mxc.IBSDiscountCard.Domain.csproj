@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <NoWarn>1701;1702;1591</NoWarn>
+
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MediatR" Version="7.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+        <PackageReference Include="Roslynator.Analyzers" Version="2.1.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Mxc.Domain.Abstractions" Version="0.3.4" />
+        <PackageReference Include="Mxc.Ruleset" Version="1.0.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Mxc.IBSDiscountCard.Common\Mxc.IBSDiscountCard.Common.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="CategoryAggregate\" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Remove="CategoryAggregate\EmptyClass.cs" />
+    </ItemGroup>
+</Project>

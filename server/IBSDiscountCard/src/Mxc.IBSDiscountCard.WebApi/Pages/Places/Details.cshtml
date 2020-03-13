@@ -1,0 +1,27 @@
+@page "{PlaceId}"
+@model Mxc.IBSDiscountCard.WebApi.Pages.Places.Details
+
+@{
+    ViewData["Title"] = @Model.Place.Name + " details";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Model.Place.Name details</h1>
+    <partial name="_PlaceForm" model="@Model.Place" view-data="@ViewData"/>
+    @if (!ModelState.IsValid)
+    {
+        <div class="alert alert-danger" role="alert" asp-validation-summary="All"></div>
+    }
+
+    <h3 class="text-left">Image</h3>
+    @if (!string.IsNullOrEmpty(Model.Place.PreviewImage))
+    {
+        <img class="img-fluid" style="max-width: 100%; height: auto"
+             src="@Url.Page("/Places/Index", "Image", new {imageName = Model.Place.PreviewImage})"
+             alt="@Model.Place.Name"/>
+    }
+    else
+    {
+        Write("No image");
+    }
+</div>

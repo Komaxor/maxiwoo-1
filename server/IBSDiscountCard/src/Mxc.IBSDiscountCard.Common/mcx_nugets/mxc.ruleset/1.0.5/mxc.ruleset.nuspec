@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Mxc.Ruleset</id>
+    <version>1.0.5</version>
+    <authors>Czeglédi Viktor</authors>
+    <owners>MXC</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MXC roslynator ruleset for c#</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>mxc ruleset roslynator</tags>
+  </metadata>
+</package>

@@ -1,0 +1,47 @@
+@page
+@model Mxc.IBSDiscountCard.WebApi.Pages.Places.Index
+
+@{
+    ViewData["Title"] = "Places";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Places</h1>
+</div>
+
+<a class="btn btn-primary align-self-end" href="@Url.Page("/Places/NewPlace")">New place</a>
+<table class="table table-striped" width="100%">
+    <thead>
+    <tr>
+        <th style="width: 25%">Name</th>
+        <th style="width: 25%">Type</th>
+        <th style="width: 25%">About</th>
+        <th style="width: 25%">Image</th>
+    </tr>
+    </thead>
+    <tbody>
+    @for (var i = 0; i < Model.PlaceHeaders.Count; i++)
+    {
+        var place = Model.PlaceHeaders[i];
+        <tr>
+            <td>
+                <a href="@Url.Page("Details", new {placeId = place.Id})">@place.Name</a>
+            </td>
+            <td>@place.Type</td>
+            <td>@place.About</td>
+            <td>
+                @if (!string.IsNullOrEmpty(place.PreviewImage))
+                {
+                    <img class="img-fluid" style="max-width: 100%; height: auto"
+                         src="@Url.Page("/Places/Index", "Image", new {imageName = place.PreviewImage})"
+                         alt="@place.Name"/>
+                }
+                else
+                {
+                    Write("No image");
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

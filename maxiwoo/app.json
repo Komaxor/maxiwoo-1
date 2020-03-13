@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "MaxiWoo",
+    "slug": "MaxiWoo",
+    "privacy": "public",
+    "sdkVersion": "35.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./App/assets/icon.png",
+    "splash": {
+      "image": "./App/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "scheme": "maxiwoo",
+    "ios": {
+      "bundleIdentifier": "com.mxc.maxiwoo",
+      "supportsTablet": false,
+      "buildNumber": "1.0.1"
+    },
+    "android": {
+      "package": "com.mxc.wedding",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBGmMe4SuloDYFglAE8Oz6NWDiu8uvZq7s"
+        }
+      }
+    },
+    "description": ""
+  }
+}

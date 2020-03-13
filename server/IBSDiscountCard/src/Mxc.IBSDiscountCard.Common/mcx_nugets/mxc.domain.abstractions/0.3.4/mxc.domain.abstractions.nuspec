@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Mxc.Domain.Abstractions</id>
+    <version>0.3.4</version>
+    <authors>Mxc.Domain.Abstractions</authors>
+    <owners>Mxc.Domain.Abstractions</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.2">
+        <dependency id="MediatR" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Mxc.Ruleset" version="1.0.5" exclude="Build,Analyzers" />
+        <dependency id="Roslynator.Analyzers" version="2.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

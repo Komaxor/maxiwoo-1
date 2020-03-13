@@ -1,0 +1,8 @@
+/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/bin/Debug/netcoreapp2.2/Mxc.IBSDiscountCard.Common.deps.json
+/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/bin/Debug/netcoreapp2.2/Mxc.IBSDiscountCard.Common.dll
+/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/bin/Debug/netcoreapp2.2/Mxc.IBSDiscountCard.Common.pdb
+/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/obj/Debug/netcoreapp2.2/Mxc.IBSDiscountCard.Common.AssemblyInfoInputs.cache
+/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/obj/Debug/netcoreapp2.2/Mxc.IBSDiscountCard.Common.AssemblyInfo.cs
+/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/obj/Debug/netcoreapp2.2/Mxc.IBSDiscountCard.Common.dll
+/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/obj/Debug/netcoreapp2.2/Mxc.IBSDiscountCard.Common.pdb
+/Users/antex/Desktop/maxiwoo-master/server/IBSDiscountCard/src/Mxc.IBSDiscountCard.Common/obj/Debug/netcoreapp2.2/Mxc.IBSDiscountCard.Common.csprojAssemblyReference.cache
